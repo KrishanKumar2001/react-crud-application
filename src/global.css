@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400;1,500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --base-bg-color:#e6e6fa70;
+    --base-btn-color:#6300a3;
+    --base-font-family: 'Poppins', sans-serif;
+    --base-font-color:#111;
+    --base-bg-white:#fff;
+
+}
+
+body{
+    background-color:var(--base-bg-color);
+    font-family: var(--base-font-family);
+    color: var(--base-font-color);
+   
+}
+
+/* important ============================== */
+
+
+#navbar{
+    width: 100%;
+    /* height:10vh; */
+    height: 70px;
+    background-color: var(--base-bg-white);
+    display: flex;
+    justify-content: center;
+   
+}
+
+#navbar .nav-container{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     /* border: 1px solid red; */
+}
+
+/* #navbar .nav-container>div{
+   flex-basis: 50%;
+   
+} */
+
+.logo a{
+   font-weight: 600;
+   font-size:25px;
+   text-decoration: none;
+   display: flex;
+   gap: 5px;
+}
+
+.logo a span:first-child{
+    color: #ed264f;
+}
+.logo a span:last-child{
+    color:rgb(46, 5, 78);
+}
+
+
+#course-container>article{
+  
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    
+}
+/* //===================== side bar=============================== */
+#course-container>article .sidebar{
+    
+    /* border: 1px solid orangered; */
+    background-color: #6300a3;
+    /* border: 1px solid #ed264f; */
+    flex-basis: 20%;
+    /* background-color: #fff; */
+    /* border-right: 1px solid #eee; */
+   
+
+}
+#course-container>article .content{
+   flex-basis: 80%;
+    background-color: transparent;
+
+}
+
+
+
+.sidebar-menu ul{
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.sidebar-menu ul li{
+  display: block;
+  width: 100%;
+  
+}
+
+.sidebar-menu ul li a{
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    background-color:#29262e5c ;
+    border-bottom: 1px solid #673AB7;
+    
+}
+
+/* .sidebar-menu ul li a:hover{
+    background-color: #30064c;
+    transition: ease all 0.7s;
+    transform: translate(2);
+} */
+
+.sidebar-menu .active{
+    background-color: #d14561;
+}
+
+#course-container{
+    position: relative;
+}
+
+.authBlock{
+    height:80vh;
+    /* height: 600px; */
+    width:32%;
+    padding: 20px;
+    /* border: 1px solid red; */
+    position: absolute;
+    right:30%;
+    top: 5%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+
+.authBlock form {
+    
+    display: flex;
+    flex-direction: column;
+    /* gap:2em; */
+    gap:30px;
+  
+
+}
+.authBlock h1{
+   
+    color:crimson;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: 2px solid crimson;
+
+}
+
+.authBlock form div{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+.authBlock form label{
+    width: 100%;
+    display: block;
+    font-size: 1em;
+    color: crimson;
+    font-weight: 500;
+}
+
+.authBlock form input{
+    width: 100%;
+    outline: none;
+    border: 1px solid crimson;
+    border-radius: 4px;
+     /* border-bottom:2px solid crimson; */
+    padding: 10px;
+}
+.authBlock form div textarea{
+    border: 1px solid crimson;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.form-group button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: crimson;
+    color: #eee;
+     border-radius: 5px;
+}
+
+.form-group input::placeholder {
+    color:#7a7979;
+    font-size: 16px;
+  }
+
+  /*=========== course detail ====================================================*/
+  #all-course-container{
+    width: 80%;
+    position: absolute;
+    /* border: 2px solid cadetblue; */
+    top: 0%;
+    left:20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+  
+  }
+
+  #all-course-container>h1{
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  #all-course-container >article{
+   
+   gap: 20px;
+   width: 90%;
+   height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+   flex-wrap: wrap;
+    align-items: center;
+   overflow-y: auto;
+  }
+
+  
+
+  
+
+  .course-container{
+     /* height:35%; */
+     height: 200px;
+     width:30%;
+     border: 1px solid #eee;
+     background-color: #fff;
+     padding:10px;
+     border-radius: 7px ;
+     
+    
+  }
+
+
+
+  .course-container h1{
+     color: crimson;
+     border-bottom:2px solid crimson ;
+     padding:10px 0;
+      }
+
+      .course-container div{
+        
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .course-container div>p{
+       font-size: 14px;
+       font-weight: 500;
+       color: crimson;
+      }
+
+      .course-container div p span{
+        font-size: 12px;
+        font-weight: 500;
+        color: rgb(40, 40, 40);
+      }
+
+      .course-container div a{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: capitalize;
+        width:25%;
+        font-size: 12px;
+        text-align: center;
+        border-radius: 4px;
+        padding: 3px;
+        border: 1px solid rgb(212, 70, 98);
+        background-color: transparent;
+        color: crimson;
+      }
+
+      .course-container div a:hover{
+        background-color: crimson;
+        color: #eee;
+      }
+
+      /* //=========================== course detail css */
+      
+        .course_details{
+            position: absolute;
+            top: 0%;
+            left: 20%;
+            /* border: 2px solid crimson; */
+            width: 70%;
+            height: 50vh;
+            padding: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          
+
+        }
+
+        
+
+        .course_details header{
+
+            width: 100%;
+            height: 15%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .course_details header>div{
+            display: flex;
+            gap: 10px;
+            margin: 10px 20px;
+        }
+
+        .course_details header>div a{
+            padding: 3px;
+            text-decoration: none;
+            background-color: crimson;
+            color: #fff;
+            width: 80px;
+            height: 30px;
+            text-align: center;
+            border-radius: 3px;
+            
+        }
+
+        .course_details header>div a:first-child{
+            background-color: blue;
+        }
+        
+
+        .back-btn a{
+           
+            display: inline-block;
+            padding: 5px;
+            text-decoration: none;
+            background-color: #111;
+            color: #fff;
+            width: 75px;
+            height: 30px;
+            text-align: center;
+            border-radius: 5px;
+            position: absolute;
+            right: 20px;
+            font-size:20px;
+        }
+
+        .course_details main{
+            width: 100%;
+            height: 25%;
+            background-color: #fff;
+        }
+        .course_details footer{
+
+            width: 100%;
+            height: 20%;
+            background-color: #fff;
+            padding: 10px 10px;
+        }
+
+        
+
+        .course_details header h2{
+            width: 100%;
+            color: crimson;
+           padding: 10px 20px;
+           
+        }
+
+        .course_details main{
+          padding: 20px 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+        }
+      
+      /* //==================spinner========== */
+      .spinner {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        display: grid;
+        place-items: center;
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: conic-gradient(
+          from 180deg at 50% 50%,
+          rgba(82, 0, 255, 0) 0deg,
+          #8a8989 360deg
+        );
+        animation: spin 2s infinite linear;
+      }
+
+     
+    
+      .spinner::before {
+        content: "";
+        border-radius: 50%;
+        width: 90%;
+        height: 90%;
+        background-color:#eee;
+       
+      }
+      
+      @keyframes spin {
+        to {
+          transform: rotate(1turn);
+        }
+      }
+
+      /* /========================= search bar*/
+      .all-course-search h1{
+        font-size: 16px;
+      }
+      .all-course-search{
+      
+        width: 90%;
+        height: 70px;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        padding: 10px 10px;
+       
+       
+      }
+
+      /* .all-course-search div:first-child{
+        flex-basis: 20%;
+
+      } */
+
+      .all-course-search div:last-child{
+        flex-basis: 80%;
+        /* border: 2px solid black; */
+        height: inherit;
+        
+      }
+
+      .search-bar{
+        width: 100%;
+       padding: 10px;
+      
+    }
+    .search-bar input{
+        width: 80%;
+        height: 50px;
+        display: inline-block;
+        border: none;
+        outline: none;
+        border-radius:5px;
+        padding: 10px;
+       
+    }
+
+    .search-bar svg{
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    
+    .search-icon{
+     
+       position: absolute;
+      top: 5%;
+      right: 24%;
+    }
+
+    /* //================= all users ==============*/
+    .userBlock{
+      height: 100%;
+      width: 80%;
+      position: absolute;
+      top: 0%;
+      left: 20%;
+      /* border: 1px solid blueviolet; */
+      padding: 20px;
+      background-color: #fff;
+      overflow-y: auto;
+    }
+
+    .userBlock h2{
+      text-transform: uppercase;
+      padding: 0px 0 ;
+      font-weight: 300;
+    }
+
+    .userBlock table{
+     
+      border: 1px solid #efefef;
+      width: 100%;
+      border-spacing: 0px;
+    }
+
+    .userBlock thead{
+      background-color: var(--base-btn-color);
+      color: #fff;
+      padding: 10px;
+      height: 50px;
+    }
+
+    .userBlock tr,td{
+      border: 1px solid #efefef;
+      padding: 2px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .userBlock img{
+      height: 100px;
+      width: 100px;
+      border-radius: 5px;
+    }
+
+    /* //====== important============= */
+    #course-container{
+      position: relative;
+      height: 100vh;
+    }
+
+    .nav-link{
+      width: 80%;
+      
+      font-size: 0.8em;
+      color: #fff;
+      padding: 5px 10px;
+      background-color: var(--base-btn-color);
+      font-weight: 300;
+      border-radius: 5px ;
+      text-decoration: none;
+     
+     
+      
+    }
+
+    .nav-link:hover{
+      border: 1px solid var(--base-btn-color);
+      color: var(--base-btn-color);
+      background-color: transparent;
+      font-weight: 400;
+    }
+
+    /* =================== menu=========== */
+    .menu-container article nav ul{
+      /* border: 1px solid red; */
+      display: flex;
+      list-style: none;
+      gap: 10px;
+    }
+    .menu-container article nav ul a{
+      text-decoration: none;
+      text-transform: capitalize;
+      color: #111;
+    }
+
+    .menu-container article nav ul a:hover{
+     color: crimson;
+    }
+
+    .menu-container article nav ul .active{
+      background-color: #6300a3;
+      border-radius: 4px ;
+      color: #fff;
+      padding: 5px;
+    }
+
+    .menu-container article nav ul .active:hover{
+      color: #fff;
+    }
+
+    /* //============== signup page========== */
+    #signup-page{
+      /* border: 1px solid red; */
+      margin-top: 3%;
+       /* position: absolute;
+       position: 50px; */
+    }
+
+    #signup-page button{
+      cursor: pointer;
+    }
+
+    #signup-page button:hover{
+      background-color: rgb(141, 3, 31);
+    }
+
+    /* //================ login============== */
+    #login-page{
+      height:400px;
+      margin-top: 5%;
+     
+    }
+
+    #login-page h1{
+      text-transform: capitalize;
+    }
+
+    #login-page button{
+      cursor: pointer;
+    }
+
+    #login-page button:hover{
+      background-color: rgb(143, 5, 32);
+    }
+
+    /* //============== logout btn====== */
+    .logout-btn{
+      /* width: 65px;
+      height: 30px; */
+      padding: 5px;
+      background-color:#d14561;
+      color:#fff;
+      border: 1px solid #99233a;
+      border-radius: 5px;
+      outline: none;
+      text-align: center;
+      cursor: pointer;
+      text-transform: capitalize;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    /* //================== mini profile */
+    .min-profile img {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+   

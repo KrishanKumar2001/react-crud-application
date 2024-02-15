@@ -1,0 +1,66 @@
+{
+  "courses": [
+    {
+      "id": "44be",
+      "title": "java full stack",
+      "trainer": "Sambhu ",
+      "description": "java with core and advance concept",
+      "courseCreatedAt": "2024-01-15",
+      "updatedAt": ""
+    },
+    {
+      "title": "web Technology",
+      "trainer": "Deepika Bhalla",
+      "description": "web technology with html,css , js",
+      "updatedAt": "2024-01-25",
+      "id": "6fbe"
+    },
+    {
+      "id": "8f3f",
+      "title": "Python",
+      "trainer": "Sk dhar",
+      "description": "python technology",
+      "courseCreatedAt": "2024-01-10",
+      "updatedAt": ""
+    },
+    {
+      "title": "Mern Stack",
+      "trainer": "Saket Bhatnagar",
+      "description": "mern stack course with saket",
+      "updatedAt": "2024-01-17",
+      "id": "7b21"
+    },
+    {
+      "id": "d91f",
+      "title": "hibernate",
+      "trainer": "Ansari",
+      "description": "hibernate course",
+      "courseCreatedAt": "2024-01-11",
+      "updatedAt": ""
+    },
+    {
+      "id": "23cc",
+      "title": "Mongodb",
+      "trainer": "Ammol",
+      "description": "Mongodb course",
+      "courseCreatedAt": "2024-01-12",
+      "updatedAt": ""
+    },
+    {
+      "id": "d19e",
+      "title": "Spring boot",
+      "trainer": "ansari",
+      "description": "nkndjndmndm",
+      "courseCreatedAt": "2024-01-12",
+      "updatedAt": ""
+    },
+    {
+      "id": "def3",
+      "title": "Mern Stack",
+      "trainer": "SK Kumar",
+      "description": "mern stack course",
+      "courseCreatedAt": "2024-01-11",
+      "updatedAt": ""
+    }
+  ]
+}

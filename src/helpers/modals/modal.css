@@ -1,0 +1,18 @@
+#modal-container .btn-holder{
+    position:absolute ;
+   top: 20%;
+   right: 35%;
+   text-align: end;
+   z-index: 5;
+}
+.modal-btn{
+    padding: 10px 20px;
+    background-color:var(--base-btn-color);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+
