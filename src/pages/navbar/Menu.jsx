@@ -12,7 +12,7 @@ const Menu = () => {
     return <Fragment>
                      <li>
                        <NavLink to={`/user/${current_user?.id}`} className={({isActive})=>(isActive?"active":"")}>{current_user?.name}</NavLink>
-                    </li>
+                     </li>
                      <li>
                         <figure>
                           <picture className='min-profile'>
